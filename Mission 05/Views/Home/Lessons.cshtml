@@ -1,0 +1,29 @@
+﻿@{
+    ViewData["Title"] = "Lessons";
+}
+
+<div class="container">
+    <h1>@ViewData["Title"]</h1>
+
+    <p>
+        I offer private and group lessons in any style under the ballroom umbrella. I'm excited to help you in your dance journey! 
+        Please contact me via phone number to set up a time and location. Depending on the location, there may be a floor fee in 
+        addition to the cost. Keep dancing!
+    </p>
+
+    <form id="pricingForm" class="col-md-6">
+        <fieldset>
+            <legend>Pricing</legend>
+            <label for="numHours" class="form-label">Number of Hours</label>
+            <input type="number" id="numHours" class="form-control" step="0.25" />
+            <label for="rate" class="form-label">Cost per Hour</label>
+            <input type="text" id="rate" value="$45.00" class="form-control" disabled readonly />
+            <br />
+            <button type="submit" class="btn btn-outline-success">Calculate</button>
+            <br /><br />
+            <label for="total" class="form-label">Total Cost:</label>
+            <input type="text" id="total" class="form-control" disabled readonly />
+        </fieldset>
+        
+    </form>
+</div>
